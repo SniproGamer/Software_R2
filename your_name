@@ -1,6 +1,0 @@
-<script>start("/Users/apple/Documents/Software_R2/your_name/");</script>
-<script>onHasParentDirectory();</script>
-<script>addRow(".venv",".venv",1,224,"224 B",1744652369,"14/04/2025, 23:09:29");</script>
-<script>addRow("__init__.py","__init__.py",0,0,"0 B",1744608456,"14/04/2025, 10:57:36");</script>
-<script>addRow("drone_log.txt","drone_log.txt",0,34305,"33.5 kB",1745085414,"19/04/2025, 23:26:54");</script>
-<script>addRow("your_code.py","your_code.py",0,4427,"4.3 kB",1745205396,"21/04/2025, 08:46:36");</script>
