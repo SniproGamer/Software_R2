@@ -19,7 +19,7 @@ PATH_WIDTH = 2
 ALTITUDE_TOLERANCE = 0.1
 COMMAND_INTERVAL = 0.3
 TARGET_ALTITUDES = [3, 2]
-TARGET_SPEEDS = [1, 1]
+TARGET_SPEEDS = [1,1]  # Speeds alternate between 1 and 5
 MAX_X = 200
 
 def parse_telemetry(telemetry_str: str) -> dict:
@@ -90,7 +90,7 @@ async def strict_altitude_control():
             if has_landed:
                 status_text.append("LANDED")
                 status_text.append(f"Distance covered: {final_x:.1f}")
-                status_text.append(f"Iterations: {command_count - 2}")
+                status_text.append(f"Iterations: {command_count - 3}")  # Subtract 3 for iterations
             else:
                 status_text.append(f"Altitude: {telemetry.get('Y', 0):.1f}")
                 status_text.append(f"X: {telemetry.get('X', 0):.1f}")
